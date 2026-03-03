@@ -1,7 +1,10 @@
+import logo from "../images/LogoKasaBlanc.png"
+
 function Footer() {
   return (
-    <footer style={{ padding: "16px", textAlign: "center" }}>
-      <p>Footer</p>
+    <footer>
+      <img src={logo} alt="Logo de Kasa" />
+      <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }
