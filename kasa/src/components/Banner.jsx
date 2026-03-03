@@ -1,5 +1,3 @@
-import BannerImage from "../images/ImageBanner.png"
-
 function Banner() {
     return (
         <div className="banner">
