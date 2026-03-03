@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: #000000;
@@ -95,7 +96,50 @@ footer img {
 }
 
 footer p {
-font-size: 20px;
-font-weight: 500;
-margin: 0px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 0px 20px 0px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.banner {
+  background-image: url(images/ImageBanner.png);
+  height: 223px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.banner h1 {
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-handler {
+  background-color: #f6f6f6;
+  display: flex;
+  gap: 15px;
 }

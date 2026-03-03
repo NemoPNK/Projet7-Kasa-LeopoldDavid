@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom"
+import Banner from "../components/Banner"
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home">
+      <Banner/>
+      <section className="card-handler">
+
+      </section>
     </div>
   )
 }
