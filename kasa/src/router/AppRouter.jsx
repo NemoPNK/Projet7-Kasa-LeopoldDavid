@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 
 import Home from "../pages/Home"
 import About from "../pages/About"
@@ -11,7 +11,8 @@ function AppRouter() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/logement/:id" element={<Logement />} />
-      <Route path="*" element={<Error />} />
+      <Route path="/error" element={<Error />} />
+      <Route path="*" element={<Navigate to="/error" replace />} />
     </Routes>
   )
 }

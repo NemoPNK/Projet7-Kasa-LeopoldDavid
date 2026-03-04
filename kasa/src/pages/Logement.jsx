@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import logements from "../data/logements.json"
 import Dropdown from "../components/Dropdown"
 import Tag from "../components/Tag"
@@ -11,7 +11,7 @@ function Logement() {
   const logement = logements.find((logement) => logement.id === id)
 
   if (!logement) {
-    return <p>Logement introuvable</p>
+    return <Navigate to="/error" replace />
   }
 
   return (
