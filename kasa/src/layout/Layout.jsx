@@ -4,8 +4,10 @@ import Footer from "../components/Footer"
 function Layout({ children }) {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <div>
+        <Header />
+        <main>{children}</main>
+      </div>
       <Footer />
     </>
   )

@@ -3,7 +3,7 @@ import { useState } from "react"
 function Carousel({ pictures, title }) {
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    const hasManyPictures = pictures.length > 1
+    const MoreImage = pictures.length > 1
 
     function goPrev() {
         setCurrentIndex((prev) => (prev - 1 + pictures.length) % pictures.length)
@@ -20,7 +20,7 @@ function Carousel({ pictures, title }) {
                 alt={title}
             />
 
-            {hasManyPictures && (
+            {MoreImage && (
                 <>
                     <button onClick={goPrev} className="prev">
                         <i className="fa-solid fa-chevron-left"></i>
